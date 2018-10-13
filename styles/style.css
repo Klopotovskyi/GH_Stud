@@ -1,0 +1,24 @@
+html {
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    background-color: #a6d3ea;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #3a1973;
+   }
+
+p,li {
+    font-size: 16px;
+    line-height:1.5;
+    }
+
+img {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
