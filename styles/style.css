@@ -1,0 +1,47 @@
+html {
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    background-color: #a6d3ea;
+}
+
+body{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    }
+.conent p{
+    font-size: 16px;
+    line-height:1.5;
+    text-indent: 20px;
+}
+
+ .main_list  li {
+    font-size: 16px;
+    line-height: 1.5;
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: #3a1973;
+   }
+
+img {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.contact_tbl{
+    border-style: none;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+
+}
+.contact_tbl img{
+    width: 50px;
+    height: 50px;
+    }
