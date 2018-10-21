@@ -95,5 +95,153 @@
         </tr>
     </table>
 
+    <h1>Profile edit page</h1>
+    <div class="form">
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Basic info</legend>
+                <table class="basic_table">
+                    <tr>
+                        <td width="100px">
+                            <label for="ID">ID</label>
+                        </td>
+                        <td><input type="text" id="ID" value="725"></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="First_name">First name</label>
+                        </td>
+                        <td><input type="text" id="First_name"></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="Last_name">Last name</label>
+                        </td>
+                        <td><input type="text" id="Last_name"></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="user_password">Password</label>
+                        </td>
+                        <td><input type="password" id="user_password" minlength="8" value="*********"></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="phone">Phone</label>
+                        </td>
+                        <td><input type="tel" id="phone" placeholder="380"></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="user_email">E-mail</label>
+                        </td>
+                        <td><input type="email" id="user_email" placeholder="myemail@placeholder.com"></td>
+                    </tr>
+
+                </table>
+                <div class="firstchkb">
+                    <input type="checkbox" id="keep_email_privat">
+                    <label for="keep_email_privat">
+                        Keep my email adress privat
+                        We'll remove your public profile email and use 1978331+username.noreply.localhost
+                    </label>
+                </div>
+                <table class="data_table">
+                    <tr>
+                        <td width="95px">
+                            <label for="date">DOB</label>
+                        </td>
+                        <td>
+                            <input type="date" id="date" value="/ /">
+                        </td>
+                        <td>
+                            <img src="images/calendar.jpg" alt="Calendar" width="23px" height="23px">
+                        </td>
+                    </tr>
+                </table>
+                <table class="basic_table">
+                    <tr>
+                        <td width="100px">
+                            <label for="url_blog">Blog url</label>
+                        </td>
+                        <td>
+                            <input type="url" id="url_blog">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="about">About me</label>
+                        </td>
+                        <td>
+                            <textarea id="about" name="about me" cols="62" rows="15"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="user_photo">Profile picture</label>
+                        </td>
+                        <td>
+                            <button type="button" id="user_photo" >Choose the file</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Profesional info</legend>
+                <table class="data_table">
+                    <tr>
+                        <td width="100px">
+                            <label for="Desire">Desire to study</label>
+                        </td>
+                        <td><input type="range" id="Desire" ></td>
+                    </tr>
+                    <tr>
+                        <td width="100px">
+                            <label for="Experience">Experience</label>
+                        </td>
+                        <td class="exp">
+                            <input type="number" id="Experience" value="3">
+                        </td>
+                    </tr>
+                </table>
+                <p>Develomment experience</p>
+                <div class="firstchkb">
+                    <input name="devexp" type="radio" value="exp_learn" id="exp_l">
+                    <label for="exp_l"> Learning to program</label><br>
+                    <input name="devexp" type="radio" value="exp_jun" id="exp_j" checked>
+                    <label for="exp_j">Junior Developer</label><br>
+                    <input name="devexp" type="radio" value="exp_mid" id="exp_m">
+                    <label for="exp_m">Mid_Level Developer </label><br>
+                    <input name="devexp" type="radio" value="exp_sen" id="exp_s">
+                    <label for="exp_s">Senior Developer </label>
+                </div>
+                <br>
+                <span>Country</span>
+                            <div class="tab">
+                            <select>
+                                <option value="UA" selected>Ukraine</option>
+                                <option value="USA">USA</option>
+                                <option value="Thai">Thailand</option>
+                                <option value="Esp">Spain</option>
+                            </select>
+                            </div>
+                <br>
+                <br>
+                <span>Slills </span>
+                    <div class="tab">
+                            <input type="checkbox" name="skills" value="html" checked> HTML <br>
+                            <input type="checkbox" name="skills" value="css"> CSS<br>
+                            <input type="checkbox" name="skills" value="js"> Java Script<br>
+                            <input type="checkbox" name="skills" value="r"> R<br>
+                            <input type="checkbox" name="skills" value="ccala"> Scals<br>
+                            <input type="checkbox" name="skills" value="has"> Haskell<br>
+                    </div>
+
+            </fieldset>
+            <div class="submitting">
+                <input type="reset" value="Raset"> <button type="submit"> Submit</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

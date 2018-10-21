@@ -19,3 +19,42 @@
 .table th:last-child, th:first-child {
     font-size: 26pt;
 }
+
+.form{ width: 600px;}
+.basic_table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    }
+.basic_table td {
+    border: hidden;
+    }
+.basic_table input{
+    width: 450px;
+}
+.firstchkb{
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 15px;
+}
+.basic_table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.data_table td {
+    border: hidden;
+    }
+.data_table input {
+    width: 425px;
+}
+.exp input{
+    width: 30px;}
+.tab {
+    text-align: left;
+    padding-left: 100px;
+}
+.tab select{
+width: 440px;}
+.submitting{text-align: right;}
+
