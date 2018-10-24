@@ -117,7 +117,7 @@
                 </li>
                 <li>
                     <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="" minlength="8" value="*********">
+                    <input type="password" id="user_password" name="password" minlength="8" value="*********">
                 </li>
                 <li>
                     <label for="phone">Phone</label>
@@ -136,8 +136,8 @@
                 </li>
                 <li>
                     <label for="date">DOB</label>
-                    <input type="date" id="date" name="date" value="/ /">
-                    <img src="images/calendar.jpg" alt="Calendar" width="23px" height="23px">
+                    <input type="date" id="date" name="date">
+                    <img src="images/calendar.jpg" alt="Calendar" width="23" height="23">
                 </li>
                 <li>
                     <label for="url_blog">Blog url</label>  <input type="url" id="url_blog" name="url" value="">
@@ -156,7 +156,7 @@
             <legend>Profesional info</legend>
             <ul>
                 <li>
-                    <label for="Desire">Desire to study</label> <input type="range" id="Desire" name="desire" value="" >
+                    <label for="Desire">Desire to study</label> <input type="range" id="Desire" name="desire" value="1">
                 </li>
                 <li>
                     <label for="Experience">Experience</label>
@@ -173,25 +173,28 @@
                     <input name="devexp" type="radio" value="exp_sen" id="exp_s">
                     <label for="exp_s">Senior Developer </label><br>
                 </li>
-                <label for="country">Country</label>
-                <select id="country">
-                    <option value="UA" selected>Ukraine</option>
-                    <option disabled>------------------</option>
-                    <option value="USA">USA</option>
-                    <option value="Thai">Thailand</option>
-                    <option value="Esp">Spain</option>
-                </select>
-                <p>Slills</p>
-                <input type="checkbox" name="skills" value="html"  checked> <label>HTML</label><br>
-                <input type="checkbox" name="skills" value="css" > <label>CSS</label><br>
-                <input type="checkbox" name="skills" value="js"> <label>Java Script</label><br>
-                <input type="checkbox" name="skills" value="r"> <label>R</label><br>
-                <input type="checkbox" name="skills" value="ccala"> <label>Scals</label><br>
-                <input type="checkbox" name="skills" value="has" > <label>Haskell</label><br>
+                <li>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="UA" selected>Ukraine</option>
+                        <option disabled>------------------</option>
+                        <option value="USA">USA</option>
+                        <option value="Thai">Thailand</option>
+                        <option value="Esp">Spain</option>
+                    </select>
+                <li>
+                    <p>Slills</p>
+                    <input type="checkbox" name="skills" value="html" id="html"  checked>
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" name="skills" value="css" id="css"> <label for="css">CSS</label><br>
+                    <input type="checkbox" name="skills" value="js" id="js"> <label for="js">Java Script</label><br>
+                    <input type="checkbox" name="skills" value="r" id="R"> <label for="R">R</label><br>
+                    <input type="checkbox" name="skills" value="scals" id="scala"> <label for="scala">Scala</label><br>
+                    <input type="checkbox" name="skills" value="has" id="has"> <label for="has">Haskell</label><br>
                 </li>
             </ul>
         </fieldset>
-        <input type="reset" value="Raset" name="" > <button type="submit"> Submit</button>
+        <input type="reset" value="Raset"> <button type="submit"> Submit</button>
     </form>
     </body>
 </html>
