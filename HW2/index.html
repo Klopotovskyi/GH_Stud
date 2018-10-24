@@ -40,8 +40,7 @@
     </thead>
         <tr>
             <th>1</th>
-            <td colspan="5">Ф&nbsp;і&nbsp;з&nbsp;и&nbsp;ч&nbsp;н&nbsp;е&nbsp;&nbsp;в&nbsp;и&nbsp;х&nbsp;о&nbsp;
-                в&nbsp;а&nbsp;н&nbsp;н&nbsp;я</td>
+            <td colspan="5"><span class="big_space">Фізичне виховання</span></td>
             <td colspan="2">Вища математика для фізиків доц. Корнієнко С.В. ауд. 258</td>
             <td colspan="2">Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279</td>
             <td colspan="2">Ділова іноземна мова  ст.викл. Зінченко А.В. ауд. 267</td>
@@ -94,117 +93,107 @@
         </tr>
         </tbody>
         <tfoot>
-        <tr>
-            <td colspan="16">Заступник директора з навчально-методичної роботи,
-                ст. викладач ____________________ В. М. Власенко</td>
-        </tr>
+            <tr>
+                <td colspan="16">Заступник директора з навчально-методичної роботи,
+                    ст. викладач ____________________ В. М. Власенко</td>
+            </tr>
         </tfoot>
     </table>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Table and Form v2</title>
-        <link href="styles/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
     <h1>Profile edit page</h1>
     <form action="https://postman-echo.com/post" name="user-form" method="post" class="form">
         <fieldset>
             <legend>Basic info</legend>
-            <div class="basic_info">
-                <ul>
-                    <li>
-                        <label for="ID">ID</label>
-                    </li>
-                    <li>
-                        <input type="text" id="ID" name="ID" value="725">
-                    </li>
-                    <li>
-                        <label for="First_name">First name</label>
-                    </li>
-                    <li>
-                        <input type="text" id="First_name" name="First_name" value="">
-                    </li>
-                    <li>
-                        <label for="Last_name">Last name</label>
-                    </li>
-                    <li>
-                        <input type="text" id="Last_name" name="Last_name" value="">
-                    </li>
-                    <li>
-                        <label for="user_password">Password</label>
-                    </li>
-                    <li>
-                        <input type="password" id="user_password" name="" minlength="8" value="*********">
-                    </li>
-                    <li>
-                        <label for="phone">Phone</label>
-                    </li>
-                    <li>
-                        <input type="tel" id="phone" name="phone" placeholder="380" value="">
-                    </li>
-                    <li>
-                        <label for="user_email">E-mail</label>
-                    </li>
-                    <li>
-                        <input type="email" id="user_email" name="user_email" placeholder="myemail@placeholder.com">
-                    </li>
-                </ul>
-            </div>
-            <div class="privat_mail">
-                <input type="checkbox" id="keep_email_privat" name="keep_email_privat" value="">
-                <label for="keep_email_privat">
-                    Keep my email adress privat
-                    We'll remove your public profile email and use 1978331+username.noreply.localhost
-                </label>
-            </div>
-            <div class="data">
-                <label for="date">DOB</label>
-                <input type="date" id="date" name="date" value="/ /">
-                <img src="images/calendar.jpg" alt="Calendar" width="23px" height="23px">
-            </div>
-            <div class="basic_info">
-                <ul>
-                    <li>
-                        <label for="url_blog">Blog url</label>
-                    </li>
-                    <li>
-                        <input type="url" id="url_blog" name="url" value="">
-                    </li>
-                    <li>
-                        <label for="about">About me</label>
-                    </li>
-                    <li>
-                        <textarea id="about" name="about me" cols="62" rows="15"></textarea>
-                    </li>
-                </ul>
-            </div>
-            <div class="user_photo">
-                <label for="user_photo">Profile picture</label>
-                <button type="button" id="user_photo" >Choose the file</button>
-            </div>
+            <ul>
+                <li>
+                    <label for="ID">ID</label>
+                </li>
+                <li>
+                    <input type="text" id="ID" name="ID" value="725">
+                </li>
+                <li>
+                    <label for="First_name">First name</label>
+                </li>
+                <li>
+                    <input type="text" id="First_name" name="First_name" value="">
+                </li>
+                <li>
+                    <label for="Last_name">Last name</label>
+                </li>
+                <li>
+                    <input type="text" id="Last_name" name="Last_name" value="">
+                </li>
+                <li>
+                    <label for="user_password">Password</label>
+                </li>
+                <li>
+                    <input type="password" id="user_password" name="" minlength="8" value="*********">
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                </li>
+                <li>
+                    <input type="tel" id="phone" name="phone" placeholder="380" value="">
+                </li>
+                <li>
+                    <label for="user_email">E-mail</label>
+                </li>
+                <li>
+                    <input type="email" id="user_email" name="user_email" placeholder="myemail@placeholder.com">
+                </li>
+                <li>
+                    <input type="checkbox" id="keep_email_privat" name="keep_email_privat" value="">
+                </li>
+                <li>
+                    <label for="keep_email_privat">
+                        Keep my email adress privat
+                        We'll remove your public profile email and use 1978331+username.noreply.localhost
+                    </label>
+                </li>
+                <li>
+                    <label for="date">DOB</label>
+                    <input type="date" id="date" name="date" value="/ /">
+                    <img src="images/calendar.jpg" alt="Calendar" width="23px" height="23px">
+                </li>
+                <li>
+                    <label for="url_blog">Blog url</label>
+                </li>
+                <li>
+                    <input type="url" id="url_blog" name="url" value="">
+                </li>
+                <li>
+                    <label for="about">About me</label>
+                </li>
+                <li>
+                    <textarea id="about" name="about me" cols="62" rows="15"></textarea>
+                </li>
+                <li>
+                    <label for="user_photo">Profile picture</label>
+                </li>
+                <li>
+                    <button type="button" id="user_photo" >Choose the file</button>
+                </li>
+            </ul>
         </fieldset>
         <fieldset>
-                <legend>Profesional info</legend>
-                <div class="basic_info">
-                    <ul>
-                        <li>
-                            <label for="Desire">Desire to study</label>
-                        </li>
-                        <li>
-                            <input type="range" id="Desire" name="desire" value="" >
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="exp">
+            <legend>Profesional info</legend>
+            <ul>
+                <li>
+                    <label for="Desire">Desire to study</label>
+                </li>
+                <li>
+                    <input type="range" id="Desire" name="desire" value="" >
+                </li>
+                <li>
                     <label for="Experience">Experience</label>
+                </li>
+                <li>
                     <input type="number" id="Experience" value="3" name="Experience">
-                </div>
-                <p>Develomment experience</p>
-                <div class="radio">
+                </li>
+                <li>
+                    <span>Develomment experience</span>
+                </li>
+                <li>
                     <input name="devexp" type="radio" value="exp_learn" id="exp_l">
                     <label for="exp_l"> Learning to program</label><br>
                     <input name="devexp" type="radio" value="exp_jun" id="exp_j" checked>
@@ -213,37 +202,31 @@
                     <label for="exp_m">Mid_Level Developer </label><br>
                     <input name="devexp" type="radio" value="exp_sen" id="exp_s">
                     <label for="exp_s">Senior Developer </label><br>
-                </div>
-                <div class="basic_info">
-                    <ul>
-                        <li>
-                            <label for="country">Country</label>
-                        </li>
-                        <li><select id="country">
-                            <option value="UA" selected>Ukraine</option>
-                            <option value="USA">USA</option>
-                            <option value="Thai">Thailand</option>
-                            <option value="Esp">Spain</option>
-                        </select>
-                        </li>
-                    </ul>
-                </div>
-                <p>Slills</p>
-                <div class="radio">
+                <li>
+                    <label for="country">Country</label>
+                </li>
+                <select id="country">
+                    <option value="UA" selected>Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Thai">Thailand</option>
+                    <option value="Esp">Spain</option>
+                </select>
+                <li>
+                    <span>Slills</span>
+                </li>
+                <li>
                     <input type="checkbox" name="skills" value="html"  checked> <label>HTML</label><br>
                     <input type="checkbox" name="skills" value="css" > <label>CSS</label><br>
                     <input type="checkbox" name="skills" value="js"> <label>Java Script</label><br>
                     <input type="checkbox" name="skills" value="r"> <label>R</label><br>
                     <input type="checkbox" name="skills" value="ccala" id=> <label>Scals</label><br>
                     <input type="checkbox" name="skills" value="has" > <label>Haskell</label><br>
-                </div>
-
-            </fieldset>
-    </form>
-
-    <div class="submiting">
+                </li>
+            </ul>
+        </fieldset>
         <input type="reset" value="Raset" name="" > <button type="submit"> Submit</button>
-    </div>
+
+    </form>
 
     </body>
 </html>
