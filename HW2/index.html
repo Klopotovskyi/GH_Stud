@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms&Table</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2"> </th>
+                <th>I-A</th>
+                <th>I-Б</th>
+                <th colspan="2">І-В</th>
+                <th>І-І</th>
+                <th>ІІ-A</th>
+                <th>IІ-Б</th>
+                <th colspan="2">ІІ-В</th>
+                <th colspan="2">ІІІ-А</th>
+                <th colspan="2">ІІІ-В</th>
+                <th>ІІІ-І</th>
+                <th rowspan="2"></th>
+            </tr>
+        <tr>
+            <td colspan="2">підгрупа І</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІІ</td>
+            <td>підгрупа ІІ</td>
+            <td colspan="2">підгрупа І</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІІ</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІІ</td>
+            <td>підгрупа І</td>
+            <td>підгрупа ІІ</td>
+            <td>підгрупа ІІ</td>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <th>1</th>
+            <td colspan="5"><span class="big_space">Фізичне виховання</span></td>
+            <td colspan="2">Вища математика для фізиків доц. Корнієнко С.В. ауд. 258</td>
+            <td colspan="2">Прикладна механіка та основи конструювання доц.Луценко Г.В. ауд. 279</td>
+            <td colspan="2">Ділова іноземна мова  ст.викл. Зінченко А.В. ауд. 267</td>
+            <td colspan="3">Теорія ймовірностей та випадкові процеси  доц. Ральченко С.А. ауд. 136</td>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td colspan="2">Математичний аналіз доц. Лила Д.М ауд. 241</td>
+            <td> </td>
+            <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+            <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+            <td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
+            <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+            <td> </td>
+            <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
+            <td> </td>
+            <td> </td>
+            <td>Вища математика доц. Босовський М.В. ауд. 243</td>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td colspan="2">Математичний аналіз доц. Лила Д.М. ауд. 241</td>
+            <td>Інженерна та комп'ютерна графіка ст.викл. Власенко В.М. ауд. 131</td>
+            <td></td>
+            <td>Дискретна математика доц. Атамась В.В. ауд. 282</td>
+            <td colspan="2">Педагогіка доц. Лещенко І.Т. ауд. 258</td>
+            <td> </td>
+            <td>Іноземна мова викл. Зінченко А.В. ауд. 242</td>
+            <td colspan="2">Чисельні методи у фізиці доц. Сторожук Н.В. ауд. 268</td>
+            <td> </td>
+            <td> </td>
+            <td>Вища математика доц. Босовський М.В. ауд. 243</td>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td colspan="2"></td>
+            <td colspan="2">Фізика ст.викл. Власенко В.М. ауд. 279</td>
+            <td> </td>
+            <td colspan="2"></td>
+            <td> </td>
+            <td> </td>
+            <td colspan="2"></td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <th>4</th>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="16">Заступник директора з навчально-методичної роботи,
+                    ст. викладач ____________________ В. М. Власенко</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Profile edit page</h1>
+    <form action="https://postman-echo.com/post" name="user-form" method="post" class="form">
+        <fieldset>
+            <legend>Basic info</legend>
+            <ul>
+                <li>
+                    <label for="ID">ID</label> <input type="text" id="ID" name="ID" value="725">
+                </li>
+                <li>
+                    <label for="First_name">First name</label>
+                    <input type="text" id="First_name" name="First_name" value="">
+                </li>
+                <li>
+                    <label for="Last_name">Last name</label>
+                    <input type="text" id="Last_name" name="Last_name" value="">
+                </li>
+                <li>
+                    <label for="user_password">Password</label>
+                    <input type="password" id="user_password" name="password" minlength="8" value="*********">
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="380" value="">
+                </li>
+                <li>
+                    <label for="user_email">E-mail</label>
+                    <input type="email" id="user_email" name="user_email" placeholder="myemail@placeholder.com">
+                </li>
+                <li>
+                    <input type="checkbox" id="keep_email_privat" name="keep_email_privat" value="">
+                    <label for="keep_email_privat">
+                        Keep my email adress privat
+                        We'll remove your public profile email and use 1978331+username.noreply.localhost
+                    </label>
+                </li>
+                <li>
+                    <label for="date">DOB</label>
+                    <input type="date" id="date" name="date">
+                    <img src="images/calendar.jpg" alt="Calendar" width="23" height="23">
+                </li>
+                <li>
+                    <label for="url_blog">Blog url</label>  <input type="url" id="url_blog" name="url" value="">
+                </li>
+                <li>
+                    <label for="about">About me</label >
+                    <textarea id="about" name="about me" cols="62" rows="15"></textarea>
+                </li>
+                <li>
+                    <label for="user_photo">Profile picture</label>
+                    <button type="button" id="user_photo" >Choose the file</button>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Profesional info</legend>
+            <ul>
+                <li>
+                    <label for="Desire">Desire to study</label> <input type="range" id="Desire" name="desire" value="1">
+                </li>
+                <li>
+                    <label for="Experience">Experience</label>
+                    <input type="number" id="Experience" value="3" name="Experience">
+                </li>
+                <li>
+                    <p>Develomment experience</p>
+                    <ul>
+                        <li>
+                            <input name="devexp" type="radio" value="exp_learn" id="exp_l">
+                            <label for="exp_l"> Learning to program</label>
+                        </li>
+                        <li>
+                            <input name="devexp" type="radio" value="exp_jun" id="exp_j" checked>
+                            <label for="exp_j">Junior Developer</label></li>
+                        <li>
+                            <input name="devexp" type="radio" value="exp_mid" id="exp_m">
+                            <label for="exp_m">Mid_Level Developer </label>
+                        </li>
+                        <li>
+                            <input name="devexp" type="radio" value="exp_sen" id="exp_s">
+                            <label for="exp_s">Senior Developer </label></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="UA" selected>Ukraine</option>
+                        <option disabled>------------------</option>
+                        <option value="USA">USA</option>
+                        <option value="Thai">Thailand</option>
+                        <option value="Esp">Spain</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Slills</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="skills" value="html" id="html"  checked>
+                            <label for="html">HTML</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skills" value="css" id="css"> <label for="css">CSS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skills" value="js" id="js"> <label for="js">Java Script</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skills" value="r" id="R"> <label for="R">R</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skills" value="scals" id="scala"><label for="scala">Scala</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skills" value="has" id="has"> <label for="has">Haskell</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="reset" value="Raset"> <button type="submit"> Submit</button>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+.table {
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    width: auto;
+    border-collapse: collapse;
+}
+.table th{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20pt;
+}
+.table th, td {
+    border: solid 1px black;
+}
+
+.table tfoot tr:last-child{
+    text-align: left;
+    font-size: 14pt;
+}
+tr th:last-child, th:first-child {
+    font-size: 26pt;
+}
+.big_space{
+    letter-spacing: 5px;
+}
+ul{
+    padding-left: 10px;
+    margin-top: 0px;
+}
+li {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+form{
+    width: 618px;
+    font-size: 12pt;
+}
+
