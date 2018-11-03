@@ -1,0 +1,64 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    width: 1920px;
+    min-height: 2587px;
+    border: solid black 1px;
+}
+.head-page{
+    width: 1929px;
+    height: 76px;
+    background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+}
+.header{
+    margin-left: 471px;
+    width: 990px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 189px;
+    height: 70px;
+    background: url("../images/LOGO.png");
+}
+h1.logo a{
+    display: block;
+    text-indent: -9999px;
+    width: 189px;
+    height: 70px;
+}
+.header-nav{
+    width: 622px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang{
+    color: #ffffff;
+    background-color:#CE2A29;
+    border-style: none;
+}
+.content{
+    width: 990px;
+    margin-left: 471px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: burlywood;
+}
+.l-aside{
+    width: ;
+}
+
