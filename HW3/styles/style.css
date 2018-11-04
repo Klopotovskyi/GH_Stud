@@ -6,6 +6,16 @@ body{
     min-height: 2587px;
     border: solid black 1px;
 }
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #df4a2b;
+}
 .head-page{
     width: 1929px;
     height: 76px;
@@ -22,7 +32,7 @@ body{
 .logo{
     width: 189px;
     height: 70px;
-    background: url("../images/LOGO.png");
+    background: url("../images/LOGO.png") no-repeat;
 }
 h1.logo a{
     display: block;
@@ -34,8 +44,9 @@ h1.logo a{
     width: 622px;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 300;
 }
-.header-nav a{
+.main-nav a{
     text-decoration: none;
     color: #ffffff;
 }
@@ -56,9 +67,51 @@ h1.logo a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: burlywood;
+    background-color: #ffffff;
 }
 .l-aside{
-    width: ;
+    width: 577px;
+    background-color: #a6d3ea;
 }
+.main-footer{
+    background-color: blue;
+}
+.left-nav{
+    text-transform: uppercase;
+    width: 250px;
+    }
+.left-nav a {
+    display: block;
+    box-sizing: border-box;
 
+    font-size: 18px;
+    color: #363a3b;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+.left-nav-item{
+    display: inline-block;
+    text-align: left;
+    margin-left: 12px;
+    height: 26px;
+}
+.photo-arch-icon{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 30px;
+    height: 26px;
+    background: url("../images/photo_arch_icon.png") no-repeat;
+    background-position: center;
+}
+.video-arhive-icon{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 30px;
+    height: 26px;
+    text-align: center;
+    background: url("../images/video_arhive_icon.png") no-repeat;
+    background-position: center;
+}
