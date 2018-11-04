@@ -69,49 +69,63 @@ h1.logo a{
     justify-content: space-between;
     background-color: #ffffff;
 }
-.l-aside{
-    width: 577px;
-    background-color: #a6d3ea;
+.left-nav{
+    width: 250px;
 }
 .main-footer{
     background-color: blue;
 }
-.left-nav{
+.left-nav a{
     text-transform: uppercase;
-    width: 250px;
-    }
-.left-nav a {
-    display: block;
-    box-sizing: border-box;
-
+    text-decoration: none;
     font-size: 18px;
+    width: 250px;
+    height: 26px;
     color: #363a3b;
     overflow: hidden;
-    text-decoration: none;
-
+    }
+.left-nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 20px;
 }
 .left-nav-item{
-    display: inline-block;
-    text-align: left;
-    margin-left: 12px;
-    height: 26px;
-}
-.photo-arch-icon{
     display: block;
     box-sizing: border-box;
-    float: left;
+    padding-left: 15px;
+    padding-top: 6px;
+}
+.photo-arch-icon{
     width: 30px;
     height: 26px;
     background: url("../images/photo_arch_icon.png") no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 .video-arhive-icon{
-    display: block;
-    box-sizing: border-box;
-    float: left;
     width: 30px;
     height: 26px;
-    text-align: center;
     background: url("../images/video_arhive_icon.png") no-repeat;
+    background-position: center;
+}
+.rada-icon{
+    width: 30px;
+    height: 26px;
+    background: url("../images/rada-icon.png") no-repeat;
+    background-position: center;
+}
+.partners-icon{
+    width: 30px;
+    height: 26px;
+    background: url("../images/partners-focus.png") no-repeat;
+    background-position: center;
+}
+.forum-icon{
+    width: 30px;
+    height: 26px;
+    background: url("../images/forum.png") no-repeat;
     background-position: center;
 }
