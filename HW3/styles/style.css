@@ -1,5 +1,6 @@
 html{
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 body{
     width: 1920px;
@@ -8,13 +9,28 @@ body{
 }
 h2 {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
     color: #df4a2b;
+    margin-bottom: 33px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: initial;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: black;
+    margin-bottom: 13px;
+    margin-top: 5px;
+    margin-left: 14px;
 }
 .head-page{
     width: 1929px;
@@ -68,17 +84,20 @@ h1.logo a{
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
+    margin-top: 33px;
 }
 .left-nav{
     width: 250px;
 }
-.main-footer{
-    background-color: blue;
+.l-aside{
+    display: block;
+    margin-top: 8px;
 }
 .left-nav a{
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 100;
     width: 250px;
     height: 26px;
     color: #363a3b;
@@ -128,4 +147,82 @@ h1.logo a{
     height: 26px;
     background: url("../images/forum.png") no-repeat;
     background-position: center;
+}
+.main-content{
+    width: 484px;
+    min-height: 1558px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.news{
+    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 26px;
+    border-radius: 5px;
+}
+.news p{
+    height: 48px;
+    margin-left: 14px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #878c8d;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    overflow: hidden;
+}
+.news-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-top: 1px solid rgba(72, 76, 77, 0.1);
+    opacity: 0.8;
+    font-size: 12px;
+    height: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(135, 140, 141, 0.8);
+}
+.counter{
+    margin-right: 12px;
+}
+.time{
+    margin-left: 13px;
+}
+.r-aside{
+    width: 235px;
+    margin-left: 21px;
+}
+.r-aside-block{
+    width: 235px;
+    height: 213px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+.r-aside-block figure figcaption{
+    margin-left: 14px;
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #484c4d;
+}
+
+
+.main-footer{
+    background-color: blue;
 }
