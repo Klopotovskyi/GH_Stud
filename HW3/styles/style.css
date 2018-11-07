@@ -106,12 +106,10 @@ h1.logo a{
     justify-content: space-between;
     background-color: #ffffff;
 }
-.left-nav{
-    width: 250px;
-}
 .l-aside{
     display: block;
-    margin-top: 8px;
+    margin-top: 35px;
+    width: 250px;
 }
 .left-nav a{
     text-transform: uppercase;
@@ -171,6 +169,7 @@ h1.logo a{
 .main-content{
     width: 484px;
     min-height: 1558px;
+    margin-top: 32px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -222,6 +221,7 @@ h1.logo a{
 .r-aside{
     width: 235px;
     margin-left: 21px;
+    margin-top: 32px;
 }
 .r-aside-block{
     width: 235px;
