@@ -35,12 +35,11 @@ h3{
 .scene-preview{
     display: block;
     box-sizing: border-box;
-    height: 739px;
+    height: 711px;
     background-color: #ffffff;
     background: url("../images/header_bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 .header-back{
     display: block;
@@ -59,6 +58,69 @@ h3{
     position: relative;
     margin-top: -77px;
 }
+.show-shedule{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    position: absolute;
+    top: 673px;
+    width: 100%;
+    height: 93px;
+}
+.show-shedule-item{
+    width: 92px;
+    height: 93px;
+    background-color: #4C4C4C;
+    border-radius: 15px;
+    border: 1px dashed #373737;
+}
+.previous-day{
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+}
+.show-shedule-item-today{
+    width: 464px;
+    height: 93px;
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    border-radius: 15px;
+    border: 1px dashed #373737;
+}
+.date-navigate{
+    display: block;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.previous-slide{
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    margin-right: 4px;
+}
+.previous-slide span{
+    display: inherit;
+    height: 19px;
+    width: 9px;
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    background: url("../images/prew-arrow.png");
+}
+.next-slide{
+    background-color: #4C4C4C;
+    margin-left: 4px;
+}
+.next-slide span{
+    display: inherit;
+    height: 19px;
+    width: 9px;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+    background: url("../images/next-arrow.png");
+}
+
 .logo{
     width: 189px;
     height: 70px;
@@ -188,7 +250,7 @@ h1.logo a{
     justify-content: flex-start;
 }
 .news{
-    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
     margin-bottom: 26px;
     border-radius: 5px;
@@ -321,7 +383,7 @@ h1.logo a{
 }
 .social a{
     display: inline-block;
-    font-size: 0px;
+    font-size: 0;
     width: 20px;
     height: 20px;
     background-color: rgba(72, 76, 77, 0.4);
