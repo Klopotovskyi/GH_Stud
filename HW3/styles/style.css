@@ -32,11 +32,11 @@ h3{
     margin-left: 14px;
 }
 .scene-preview{
-    width: 100%;
+    width: inherit;
     height: 740px;
     background-color: #ffffff;
     background: url("../images/header_bg.jpg") no-repeat;
-    background-position: center;
+    background-size: cover;
 }
 .header-back{
     display: block;
@@ -53,7 +53,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin-top: -76px;
+    margin-top: -77px;
 }
 .logo{
     width: 189px;
@@ -73,9 +73,18 @@ h1.logo a{
     text-transform: uppercase;
     font-weight: 300;
 }
-.main-nav a{
+.main-nav li a{
+    display: block;
+    box-sizing: border-box;
+    height: 76px;
     text-decoration: none;
     color: #ffffff;
+    line-height: 76px;
+}
+
+.main-nav li a:hover {
+    color: #363a3b;
+    background-color: white;
 }
 .main-nav {
     display: flex;
