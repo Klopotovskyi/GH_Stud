@@ -3,7 +3,7 @@ html{
     font-weight: 300;
 }
 body{
-    width: 1920px;
+    width: 100%;
     min-height: 100%;
 }
 h2 {
@@ -31,23 +31,35 @@ h3{
     margin-top: 5px;
     margin-left: 14px;
 }
-.head-page{
+.scene-preview{
+    width: 100%;
+    height: 740px;
+    background-color: #ffffff;
+    background: url("../images/header_bg.jpg") no-repeat;
+    background-position: center;
+}
+.header-back{
+    display: block;
     width: 100%;
     height: 76px;
     background-image: linear-gradient(to left, #bf1e2e, #f1592a);
 }
 .header{
-    margin-left: 471px;
+    margin: 0 auto;
     width: 990px;
+    height: 76px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    margin-top: -76px;
 }
 .logo{
     width: 189px;
     height: 70px;
     background: url("../images/LOGO.png") no-repeat;
+
 }
 h1.logo a{
     display: block;
@@ -76,19 +88,14 @@ h1.logo a{
     background-color:#CE2A29;
     border-style: none;
 }
-.poster{
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-}
+
 .content{
     width: 990px;
-    margin-left: 471px;
+    margin: 0 auto 33px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #ffffff;
-    margin-top: 33px;
 }
 .left-nav{
     width: 250px;
@@ -241,7 +248,7 @@ h1.logo a{
     position: absolute;
     background-color: #cd2e2d;
     bottom: 136px;
-    left: 1480px;
+    left: 1200px;
 }
 .go-to-top img{
     position: absolute;
@@ -259,8 +266,8 @@ h1.logo a{
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin-left: 462px;
-    width: 990px;
+    margin: 0 auto;
+    width: 998px;
     font-size: 12px;
     font-weight: 300;
     text-align: left;
