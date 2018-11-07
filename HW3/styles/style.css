@@ -1,11 +1,11 @@
 html{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-
+    min-width: 100%;
+    min-height: 1400px;
 }
 body{
-    width: 100%;
-    min-width: 1280px;
+    min-width: 100%;
 }
 h2 {
     font-size: 30px;
@@ -33,11 +33,14 @@ h3{
     margin-left: 14px;
 }
 .scene-preview{
-    width: inherit;
-    height: 740px;
+    display: block;
+    box-sizing: border-box;
+    height: 739px;
     background-color: #ffffff;
     background: url("../images/header_bg.jpg") no-repeat;
     background-size: cover;
+    background-position: center;
+
 }
 .header-back{
     display: block;
@@ -132,40 +135,49 @@ h1.logo a{
     margin-bottom: 20px;
 }
 .left-nav-item{
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
     padding-left: 15px;
-    padding-top: 6px;
+    vertical-align: top;
+    padding-top: 7px;
 }
 .photo-arch-icon{
+    display: inline-block;
     width: 30px;
     height: 26px;
     background: url("../images/photo_arch_icon.png") no-repeat;
     background-position: bottom;
 }
 .video-arhive-icon{
+    display: inline-block;
     width: 30px;
     height: 26px;
     background: url("../images/video_arhive_icon.png") no-repeat;
     background-position: center;
 }
 .rada-icon{
+    display: inline-block;
     width: 30px;
     height: 26px;
     background: url("../images/rada-icon.png") no-repeat;
     background-position: center;
 }
 .partners-icon{
+    display: inline-block;
     width: 30px;
     height: 26px;
     background: url("../images/partners-focus.png") no-repeat;
     background-position: center;
 }
 .forum-icon{
+    display: inline-block;
     width: 30px;
     height: 26px;
     background: url("../images/forum.png") no-repeat;
     background-position: center;
+}
+.left-nav a:hover{
+    color: #df4a2b;
 }
 .main-content{
     width: 484px;
