@@ -10,11 +10,6 @@ body{
 h2 {
     font-size: 30px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: #df4a2b;
     margin-bottom: 33px;
 }
@@ -22,11 +17,6 @@ h3{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
-    font-style: initial;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: black;
     margin-bottom: 13px;
     margin-top: 5px;
@@ -256,10 +246,7 @@ h3{
     font-size: 14px;
     font-weight: 400;
     color: #878c8d;
-    font-style: normal;
-    font-stretch: normal;
     line-height: normal;
-    letter-spacing: normal;
     overflow: hidden;
 }
 .news-footer
@@ -272,12 +259,7 @@ h3{
     opacity: 0.8;
     font-size: 12px;
     height: 31px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
     color: rgba(135, 140, 141, 0.8);
 }
 .counter{
