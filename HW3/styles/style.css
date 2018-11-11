@@ -1,11 +1,11 @@
 html{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    min-width: 100%;
+    width: 100%;
     min-height: 1400px;
 }
 body{
-    min-width: 100%;
+    width: 100%;
 }
 h2 {
     font-size: 30px;
