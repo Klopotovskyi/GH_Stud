@@ -120,16 +120,9 @@ h3{
     left: 13px;
     background: url("../images/next-arrow.png");
 }
-
-.logo{
-    width: 189px;
-    height: 70px;
-    background: url("../images/LOGO.png") no-repeat;
-
-}
-h1.logo a{
+.logo a{
     display: block;
-    text-indent: -9999px;
+    font-size: 0;
     width: 189px;
     height: 70px;
 }
