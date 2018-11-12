@@ -1,0 +1,411 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    min-height: 1400px;
+}
+body{
+    width: 100%;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #df4a2b;
+    margin-bottom: 33px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 13px;
+    margin-top: 5px;
+    margin-left: 14px;
+}
+.scene-preview{
+    display: block;
+    box-sizing: border-box;
+    height: 711px;
+    background-color: #ffffff;
+    background: url("../images/header_bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-back{
+    display: block;
+    width: 100%;
+    height: 76px;
+    background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+}
+.header{
+    margin: 0 auto;
+    width: 990px;
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: -77px;
+}
+.show-shedule{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    position: absolute;
+    top: 673px;
+    width: 100%;
+    height: 93px;
+}
+.show-shedule-item{
+    width: 92px;
+    height: 93px;
+    background-color: #4C4C4C;
+    border-radius: 15px;
+    border: 1px dashed #373737;
+}
+.previous-day{
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+}
+.show-shedule-item-today{
+    width: 464px;
+    height: 93px;
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    border-radius: 15px;
+    border: 1px dashed #373737;
+}
+.date-navigate{
+    display: block;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.previous-slide{
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    margin-right: 4px;
+}
+.previous-slide span{
+    display: inherit;
+    height: 19px;
+    width: 9px;
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    background: url("../images/prew-arrow.png");
+}
+.next-slide{
+    background-color: #4C4C4C;
+    margin-left: 4px;
+}
+.next-slide span{
+    display: inherit;
+    height: 19px;
+    width: 9px;
+    position: absolute;
+    top: 7px;
+    left: 13px;
+    background: url("../images/next-arrow.png");
+}
+.logo a{
+    display: block;
+    font-size: 0;
+    width: 189px;
+    height: 70px;
+}
+.header-nav{
+    width: 622px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.main-nav li a{
+    display: block;
+    box-sizing: border-box;
+    height: 76px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 76px;
+}
+
+.main-nav li a:hover {
+    color: #363a3b;
+    background-color: white;
+}
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang{
+    color: #ffffff;
+    background-color:#CE2A29;
+    border-style: none;
+}
+
+.content{
+    width: 990px;
+    margin: 0 auto 33px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.l-aside{
+    display: block;
+    margin-top: 35px;
+    width: 250px;
+}
+.left-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+    width: 250px;
+    height: 26px;
+    color: #363a3b;
+    overflow: hidden;
+    }
+.left-nav li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.left-nav-item{
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 15px;
+    vertical-align: top;
+    padding-top: 7px;
+}
+.photo-arch-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url("../images/photo_arch_icon.png") no-repeat;
+    background-position: bottom;
+}
+.video-arhive-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url("../images/video_arhive_icon.png") no-repeat;
+    background-position: center;
+}
+.rada-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url("../images/rada-icon.png") no-repeat;
+    background-position: center;
+}
+.partners-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url("../images/partners-focus.png") no-repeat;
+    background-position: center;
+}
+.forum-icon{
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url("../images/forum.png") no-repeat;
+    background-position: center;
+}
+.left-nav a:hover{
+    color: #df4a2b;
+}
+.main-content{
+    width: 484px;
+    min-height: 1558px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.news{
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 26px;
+    border-radius: 5px;
+}
+.news p{
+    height: 48px;
+    margin-left: 14px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #878c8d;
+    line-height: normal;
+    overflow: hidden;
+}
+.news-footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-top: 1px solid rgba(72, 76, 77, 0.1);
+    opacity: 0.8;
+    font-size: 12px;
+    height: 31px;
+    line-height: normal;
+    color: rgba(135, 140, 141, 0.8);
+}
+.counter{
+    margin-right: 12px;
+}
+.time{
+    margin-left: 13px;
+}
+.r-aside{
+    width: 235px;
+    margin-left: 21px;
+    margin-top: 32px;
+}
+.r-aside-block{
+    width: 235px;
+    height: 213px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 01px 2px 0 rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
+}
+.r-aside-block figure figcaption{
+    margin-left: 14px;
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #484c4d;
+}
+.footer::before{
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-image: linear-gradient(to left, #bf1e2e, #f1592a);
+}
+.go-to-top{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    content: "";
+    border-radius: 4px;
+    position: absolute;
+    background-color: #cd2e2d;
+    bottom: 136px;
+    left: 1200px;
+}
+.go-to-top img{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+.footer{
+    background: #ffffff;
+    width: 100%;
+    min-height: 140px;
+    position: relative;
+}
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 998px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    color: #898989;
+}
+.footer-nav{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 625px;
+    height: 12px;
+    margin-top: 18px;
+}
+.footer-nav a{
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #898989;
+    text-decoration: none;
+}
+.footer-nav a:hover{
+    color:  #cd2e2d;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+.social a{
+    display: inline-block;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(72, 76, 77, 0.4);
+    border-radius: 4px;
+    position: relative;
+    margin-left: 2px;
+}
+.social a:hover{
+    background-color: rgba(205, 46, 45, 1);
+}
+.vk-icon{
+    width: 13px;
+    height: 8px;
+    position: absolute;
+    background: url("../images/vk-3.png");
+    top: 6px;
+    left: 3px;
+}
+.youtube-icon{
+    width: 12px;
+    height: 14px;
+    position: absolute;
+    background: url("../images/videos.png");
+    top: 3px;
+    left: 4px;
+}
+.google-icon{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: url("../images/google-116.png");
+    top: 3px;
+    left: 3px;
+}
+.facebook-icon{
+    width: 6px;
+    height: 14px;
+    position: absolute;
+    background: url("../images/facebook-12.png");
+    top: 3px;
+    left: 7px;
+}
+.twit-icon{
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    background: url("../images/bird-1.png");
+    top: 5px;
+    left: 3px;
+}
