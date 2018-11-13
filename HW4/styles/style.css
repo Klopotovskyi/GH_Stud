@@ -1,0 +1,22 @@
+html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    width: 100%;
+    min-height: 1400px;
+}
+body {
+    width: 100%;
+}
+.hesder-back-gradient{
+    width: 100%;
+    height: 950px;
+    object-fit: cover;
+    background-image: linear-gradient(to top, #eb402c, #d90647);
+}
+.header-back{
+    width: 0;
+    height: 0;
+    border-bottom: 255px solid #ffffff;
+    border-left: 100vw solid transparent;
+    margin-top: -255px;
+}
