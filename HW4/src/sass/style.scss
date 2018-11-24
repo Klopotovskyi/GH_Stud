@@ -1,0 +1,77 @@
+/*
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+*/
+$general-font-family: 'Lato', sans-serif;
+
+body, html {
+    width: 100%;
+    font-family: $general-font-family;
+    text-align: left;
+    min-height: 1400px;
+    font-size: 18px;
+}
+
+.main-header {
+    background: url('../img/head-background.png') no-repeat;
+    height: 950px;
+}
+.top-of-main-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 45px;
+    padding-top: 41px;
+    nav{
+        display: block;
+        box-sizing: border-box;
+        width: 413px;
+        margin-top: 11px;
+        margin-right: 200px;
+        height: 16px;
+    }
+    h1 {
+        box-sizing: border-box;
+        margin-left: 200px;
+        height: inherit;
+        width: 121px;
+        vertical-align: center;
+        a {
+            display: block;
+            font-size: 0;
+            text-decoration: none;
+            height: inherit;
+            width: inherit;
+        }
+    }
+}
+.logo{
+    display: block;
+    background: url("../img/hey-u.png") no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+}
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        font-size: 18px;
+        text-decoration: none;
+        color: #ffffff;
+        text-transform: uppercase;
+
+    }
+}
+

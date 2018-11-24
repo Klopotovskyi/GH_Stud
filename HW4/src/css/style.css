@@ -1,0 +1,87 @@
+/*
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
+*/
+body, html {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  min-height: 1400px;
+  font-size: 18px; }
+
+.main-header {
+  background: url("../img/head-background.png") no-repeat;
+  height: 950px; }
+
+.top-of-main-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 45px;
+  padding-top: 41px; }
+  .top-of-main-header nav {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 413px;
+    margin-top: 11px;
+    margin-right: 200px;
+    height: 16px; }
+  .top-of-main-header h1 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: 200px;
+    height: inherit;
+    width: 121px;
+    vertical-align: center; }
+    .top-of-main-header h1 a {
+      display: block;
+      font-size: 0;
+      text-decoration: none;
+      height: inherit;
+      width: inherit; }
+
+.logo {
+  display: block;
+  background: url("../img/hey-u.png") no-repeat;
+  background-size: cover;
+  height: inherit;
+  width: inherit; }
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .main-nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase; }
