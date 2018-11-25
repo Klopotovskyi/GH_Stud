@@ -10,6 +10,7 @@
 @import "../../node_modules/bootstrap/scss/grid";
 */
 $general-font-family: 'Lato', sans-serif;
+$white: #ffffff;
 
 body, html {
     width: 100%;
@@ -18,10 +19,42 @@ body, html {
     min-height: 1400px;
     font-size: 18px;
 }
-
 .main-header {
     background: url('../img/head-background.png') no-repeat;
     height: 950px;
+    position: relative;
+    section{
+        width: 1070px;
+        text-align: left;
+        height: 360px;
+        box-sizing: border-box;
+        margin-top: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2{
+            box-sizing: border-box;
+            height: 142px;
+            width: 413px;
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: 1.8px;
+        }
+        p{
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: normal;
+            margin-top: 43px;
+            span{
+                font-weight: 900;
+            }
+        }
+    }
 }
 .top-of-main-header {
     width: 100%;
@@ -71,7 +104,37 @@ body, html {
         text-decoration: none;
         color: #ffffff;
         text-transform: uppercase;
-
+        &:hover{
+            text-decoration: line-through;
+        }
     }
 }
-
+.phone{
+    background: url("../img/i-phone-7-silver.png") no-repeat;
+    height: 821px;
+    width: 479px;
+    display: block;
+    margin-top: -95px;
+}
+.download-button{
+    font-size: 0px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 224px;
+    margin-top: 101px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px 0 rgba(54, 54, 54, 0.15);
+    background-color: $white;
+    span{
+        display: block;
+        position: absolute;
+        top: 17px;
+        left: 52px;
+        font-size: 18px;
+        text-shadow: 0px 10px 30px rgba(223, 27, 61, 0.3);
+        font-weight: bold;
+        color: rgba(223, 27, 61, 1);
+    }
+}
