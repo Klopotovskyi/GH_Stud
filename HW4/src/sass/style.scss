@@ -1,4 +1,4 @@
-/*
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -8,7 +8,7 @@
 @import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/code";
 @import "../../node_modules/bootstrap/scss/grid";
-*/
+
 $general-font-family: 'Lato', sans-serif;
 $white: #ffffff;
 
@@ -23,6 +23,10 @@ body, html {
     background: url('../img/head-background.png') no-repeat;
     height: 950px;
     position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
     section{
         width: 1142px;
         text-align: left;
@@ -69,12 +73,12 @@ body, html {
         box-sizing: border-box;
         width: 413px;
         margin-top: 11px;
-        margin-right: 200px;
+        margin-right: 10%;
         height: 16px;
     }
     h1 {
         box-sizing: border-box;
-        margin-left: 200px;
+        margin-left: 10%;
         height: inherit;
         width: 121px;
         vertical-align: center;
@@ -450,13 +454,16 @@ body, html {
 .subscribe{
     margin-top: 227px;
     p{
+        display: block;
         box-sizing: border-box;
         height: 18px;
         width: 904px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 49px;
+        margin-bottom: 0;
         overflow: hidden;
+        line-height: 18px;
     }
 }
 .subscribe-form-content{
@@ -506,11 +513,13 @@ body, html {
     p{
         box-sizing: border-box;
         width: 795px;
-        height: 19px;
+        height: 18px;
         font-size: 18px;
         text-align: center;
         color: #808080;
         margin-top: 39px;
+        margin-bottom: 0;
+        line-height: 18px;
         overflow: hidden;
     }
     a{
@@ -535,6 +544,35 @@ body, html {
     margin-bottom: 57px;
 }
 .main-footer{
-    display: flex;
     border-top: solid 1px #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    height: 102px;
+    padding-left: 10.2%;
+}
+.footer-nav{
+    box-sizing: border-box;
+    width: 584px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a{
+        line-height: 1.56;
+        text-decoration: none;
+        color: #363636;
+    }
+}
+.lang{
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    border-radius: 25px;
+    background-color: #f8f8f8;
+    text-align: right;
+    margin-right: 10%;
+    padding-left: 30px;
 }
