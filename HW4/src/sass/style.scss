@@ -1,4 +1,5 @@
 
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -8,6 +9,7 @@
 @import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/code";
 @import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/navbar";
 
 $general-font-family: 'Lato', sans-serif;
 $white: #ffffff;
@@ -68,6 +70,7 @@ body, html {
     align-items: flex-start;
     height: 45px;
     padding-top: 41px;
+    box-sizing: border-box;
     nav{
         display: block;
         box-sizing: border-box;
@@ -112,6 +115,10 @@ body, html {
             text-decoration: line-through;
         }
     }
+}
+.menu-mobile-icon{
+    display: none;
+    color: $white;
 }
 .phone{
     background: url("../img/i-phone-7-silver.png") no-repeat;
@@ -266,7 +273,6 @@ body, html {
     justify-content: space-between;
     width: 1170px;
     margin-top: 128px;
-
 }
 .feedback{
     display: block;
@@ -418,7 +424,6 @@ body, html {
         margin-left: 38px;
     }
 }
-
 .possibility-item-right{
     text-align: left;
     p{
@@ -577,16 +582,19 @@ body, html {
     padding-left: 30px;
 }
 
-@media (max-width: 667px){
+@media (max-width: 768px){
     body{
         height: auto;
     }
     .phone {
         display: none;
     }
-    .top-of-main-header nav{
+    .main-nav{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
         display: none;
-
     }
     .main-header{
         height: 700px;
@@ -607,6 +615,14 @@ body, html {
             padding-left: 5%;
         }
     }
+    .menu-mobile-icon{
+        display: block;
+        text-align: right;
+        &:hover~ul{
+            display: flex;
+            }
+    }
+
     .download-button{
         margin-top: 5%;
         margin-left: auto;
@@ -687,5 +703,4 @@ body, html {
     .separator, .bottom-separator{
         display: none;
     }
-
 }
