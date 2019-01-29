@@ -53,7 +53,7 @@ html {
 
 .header {
   margin: 0 auto;
-  width: 990px;
+  width: 100%;
   height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,9 +79,9 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -91,23 +91,16 @@ html {
   height: 93px; }
 
 .show-shedule-item {
-  width: 92px;
+  width: 91px;
   height: 93px;
-  background-color: #4C4C4C;
-  border-radius: 15px;
-  border: 1px dashed #373737; }
-
-.previous-day {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#dd492a), to(#e54b2b));
-  background-image: linear-gradient(to top, #dd492a, #e54b2b); }
+  background: url("../img/item-shedule.png") no-repeat;
+  border-right: 1px dashed #373737; }
 
 .show-shedule-item-today {
-  width: 464px;
+  width: 555px;
   height: 93px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#dd492a), to(#e54b2b));
-  background-image: linear-gradient(to top, #dd492a, #e54b2b);
-  border-radius: 15px;
-  border: 1px dashed #373737; }
+  background: url("../img/item-content-active.png") no-repeat;
+  border-right: 1px dashed #373737; }
 
 .date-navigate {
   display: block;

@@ -58,7 +58,7 @@ html{
 }
 .header{
     margin: 0 auto;
-    width: 990px;
+    width: 100%;
     height: 76px;
     display: flex;
     flex-direction: row;
@@ -70,7 +70,7 @@ html{
 .show-shedule{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
+    justify-content:center;
     align-items: center;
     position: absolute;
     top: 673px;
@@ -78,21 +78,16 @@ html{
     height: 93px;
 }
 .show-shedule-item{
-    width: 92px;
+    width: 91px;
     height: 93px;
-    background-color: #4C4C4C;
-    border-radius: 15px;
-    border: 1px dashed #373737;
-}
-.previous-day{
-    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    background: url("../img/item-shedule.png") no-repeat;
+    border-right: 1px dashed #373737;
 }
 .show-shedule-item-today{
-    width: 464px;
+    width: 555px;
     height: 93px;
-    background-image: linear-gradient(to top, #dd492a, #e54b2b);
-    border-radius: 15px;
-    border: 1px dashed #373737;
+    background: url("../img/item-content-active.png") no-repeat;
+    border-right: 1px dashed #373737;
 }
 .date-navigate{
     display: block;
