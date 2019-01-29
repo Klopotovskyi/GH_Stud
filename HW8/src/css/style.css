@@ -139,11 +139,13 @@ html {
     left: 13px;
     background: url("../img/next-arrow.png"); }
 
-.logo a {
-  display: block;
-  font-size: 0;
-  width: 189px;
-  height: 70px; }
+.logo {
+  margin-left: 10%; }
+  .logo a {
+    display: block;
+    font-size: 0;
+    width: 189px;
+    height: 70px; }
 
 .header-nav {
   width: 622px;
@@ -180,7 +182,8 @@ html {
 .lang {
   color: #ffffff;
   background-color: #CE2A29;
-  border-style: none; }
+  border-style: none;
+  margin-right: 10%; }
 
 .content {
   width: 990px;
