@@ -77,6 +77,10 @@ h3{
     height: 93px;
     background: url("../img/item-shedule.png") no-repeat;
     border-right: 1px dashed #373737;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .show-shedule-item-today{
     width: 555px;
@@ -92,9 +96,12 @@ h3{
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
     position: relative;
+    background-color: #4C4C4C;
+    &:hover{
+        background-image: linear-gradient(to top, #dd492a, #e54b2b);
+    }
 }
 .previous-slide{
-    background-image: linear-gradient(to top, #dd492a, #e54b2b);
     margin-right: 4px;
     span{
         display: inherit;
@@ -107,7 +114,6 @@ h3{
     }
 }
 .next-slide {
-    background-color: #4C4C4C;
     margin-left: 4px;
     span {
         display: inherit;
