@@ -38,9 +38,13 @@ h3 {
   height: 711px;
   width: 100%;
   overflow: hidden; }
-  .scene-preview img {
-    margin-left: -425px;
-    margin-top: -30px; }
+
+.scene-preview-poster {
+  margin-left: -425px;
+  display: none; }
+
+.shown {
+  display: block; }
 
 .header-back {
   display: block;
@@ -88,6 +92,38 @@ h3 {
   width: 100%;
   height: 93px; }
 
+.day-of-week {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  width: 21px;
+  height: 15px;
+  opacity: 0.4;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4); }
+
+.show-date {
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 44px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff; }
+
+.show-month {
+  width: 54px;
+  height: 11px;
+  font-size: 13px;
+  text-align: center;
+  color: #7d7c7c;
+  opacity: 0.4;
+  border-top: solid 1px rgba(255, 255, 255, 0.4); }
+
 .show-shedule-item {
   width: 91px;
   height: 93px;
@@ -100,9 +136,9 @@ h3 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
@@ -114,7 +150,45 @@ h3 {
   width: 464px;
   height: 93px;
   background: url("../img/active-item-content.png") no-repeat;
-  border-right: 1px dashed #373737; }
+  border-right: 1px dashed #373737;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative; }
+  .show-shedule-item-today h4 {
+    font-size: 28px;
+    font-weight: 100;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 11px;
+    margin-left: 18px; }
+  .show-shedule-item-today p {
+    font-size: 13px;
+    font-weight: 100;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 17px;
+    margin-left: 18px; }
+
+.buy-ticket-btn {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 10px;
+  right: 53px;
+  height: 24px;
+  width: 114px;
+  background: url("../img/buy-ticket-btn.png") no-repeat; }
 
 .date-navigate {
   display: block;
@@ -140,7 +214,7 @@ h3 {
     position: absolute;
     top: 9px;
     left: 14px;
-    background: url("../img/prew-arrow.png"); }
+    background: url("../img/prew-arrow.png") no-repeat; }
 
 .next-slide {
   margin-left: 4px; }

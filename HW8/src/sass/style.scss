@@ -40,10 +40,13 @@ h3{
     height: 711px;
     width: 100%;
     overflow: hidden;
-    img{
-       margin-left: -425px;
-        margin-top: -30px;
-    }
+}
+.scene-preview-poster{
+    margin-left: -425px;
+    display: none;
+}
+.shown{
+    display: block;
 }
 .header-back{
     display: block;
@@ -72,6 +75,36 @@ h3{
     width: 100%;
     height: 93px;
 }
+.day-of-week{
+    display: block;
+    box-sizing: border-box;
+    margin-top:5px;
+    margin-bottom: 6px;
+    width: 21px;
+    height: 15px;
+    opacity: 0.4;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
+.show-date{
+    display: block;
+    box-sizing: border-box;
+    font-size: 44px;
+    font-weight: 100;
+    text-align: center;
+    color: #ffffff;
+}
+.show-month{
+    width: 54px;
+    height: 11px;
+    font-size: 13px;
+    text-align: center;
+    color: #7d7c7c;
+    opacity: 0.4;
+    border-top: solid 1px rgba(255, 255, 255, 0.4);
+}
 .show-shedule-item{
     width: 91px;
     height: 93px;
@@ -79,7 +112,7 @@ h3{
     border-right: 1px dashed #373737;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .current-shedule-item{
@@ -90,6 +123,36 @@ h3{
     height: 93px;
     background: url("../img/active-item-content.png") no-repeat;
     border-right: 1px dashed #373737;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    h4{
+        font-size: 28px;
+        font-weight: 100;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 11px;
+        margin-left: 18px;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 100;
+        text-align: left;
+        color: #ffffff;
+        margin-top: 17px;
+        margin-left: 18px;
+    }
+}
+.buy-ticket-btn{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+    right: 53px;
+    height: 24px;
+    width: 114px;
+    background: url("../img/buy-ticket-btn.png") no-repeat;
 }
 .date-navigate{
     display: block;
@@ -113,7 +176,7 @@ h3{
         position: absolute;
         top: 9px;
         left: 14px;
-        background: url("../img/prew-arrow.png");
+        background: url("../img/prew-arrow.png") no-repeat;
     }
 }
 .next-slide {
