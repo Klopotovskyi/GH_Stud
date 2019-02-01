@@ -5,21 +5,27 @@ document.addEventListener('DOMContentLoaded', function () {
     let posters = document.querySelectorAll('.scene-preview img');
     let curentItem = 0;
 
-    next_slide_btn.onclick = function (){
-        posters[curentItem].style.display = 'none';
+    next_slide_btn.addEventListener('click', function () {
+        HidePoster(curentItem);
         curentItem++;
-        if (curentItem>=posters.length){
-            curentItem =0;
+        if (curentItem >= posters.length) {
+            curentItem = 0;
         }
-        posters[curentItem].style.display = 'block';
-    }
-    prev_slide_btn.onclick = function (){
-        posters[curentItem].style.display = 'none';
+        ShowPoster(curentItem);
+    });
+    prev_slide_btn.addEventListener('click', function () {
+        HidePoster(curentItem);
         curentItem--;
-        if (curentItem<0){
-            curentItem =posters.length -1;
+        if (curentItem < 0) {
+            curentItem = posters.length - 1;
         }
-        posters[curentItem].style.display = 'block';
-    }
+        ShowPoster(curentItem);
+    });
 
+    function ShowPoster(curentItem) {
+        posters[curentItem].classList.toggle('shown');
+    }
+    function HidePoster(curentItem) {
+        posters[curentItem].classList.remove('shown');
+    }
 })
