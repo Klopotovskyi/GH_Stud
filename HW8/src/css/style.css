@@ -43,6 +43,9 @@ h3 {
   margin-left: -425px;
   display: none; }
 
+.item-desc {
+  display: none; }
+
 .shown {
   display: block; }
 
